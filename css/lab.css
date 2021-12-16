@@ -1,0 +1,89 @@
+html{
+    font-family: sans-serif;
+}
+.cmp-input-container,
+.cmp-input-container>label {
+    display: grid;
+    justify-content: center;
+}
+
+.cl-dummy {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type="number"],
+.cl-number {
+    font-family: monospace;
+    font-size: 1.25em;
+    text-align: right;
+}
+
+.cmp-section-container {
+    margin: auto;
+    width: 400px;
+}
+
+.cmp-input-container {
+    grid-template-columns: 1fr 5ch;
+}
+
+.cmp-input-container>label {
+    grid-template-columns: 15ch 1fr;
+    white-space: nowrap;
+}
+
+.cmp-input-container>label>b {
+    align-self: center;
+    text-align: right;
+}
+
+.cmp-input-container>label>b::after {
+    content: '::';
+    margin-left: 0.5ch;
+    margin-right: 0.5ch;
+    font-weight: bold;
+    color: blue;
+}
+
+.cmp-result {
+    padding-right: 2ch;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+.cmp-input-no {
+    display: inline-block;
+    width: 2ch;
+}
+
+button>*,
+.cl-action>* {
+    pointer-events: none;
+}
+
+button,
+.cl-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.cmd-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.first {
+    display: flex;
+    align-items: center;
+}
+
+.btn-add-section{
+    width: 400px;
+    margin: 0 auto;
+}
+
+
