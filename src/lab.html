@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My DOM</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/lab.css" />
+    <script type="module" src="./js/lab.js"></script>
+  </head>
+  <body>
+    <template id="tmp-input">
+      <div class="cmp-input-container">
+        <label>
+          <b>Number <span class="cmp-input-no cl-number"></span></b>
+          <input type="number" value="0" required />
+        </label>
+        <button type="button" class="cmd-delete-input">
+          <i class="material-icons"> delete_forever </i>
+        </button>
+      </div>
+    </template>
+
+    <template id="tmp-section">
+      <section class="cmp-section-container">
+        <hr/>
+
+        <div class="cmd-bar">
+          <div class="first">
+            <button type="button" class="cmd-add-input">
+              <i class="material-icons">add</i>
+              Input
+            </button>
+            <b>Section <span class="cmp-section-no cl-number"></span></b>
+          </div>
+
+          <button type="button" class="cmd-delete-section">
+            <i class="material-icons">delete_forever</i>
+          </button>
+        </div>
+
+        <div class="cmp-inputs-container"></div>
+        <div class="cmp-input-container">
+          <label>
+            <b>Result</b>
+            <output class="cmp-result cl-number">0</output>
+          </label>
+          <span class="cl-dummy"></span>
+        </div>
+      </section>
+    </template>
+
+    <main class="cmp-main-container">
+      <div class="btn-add-section">
+        <button type="button" class="cmd-add-section">
+          <i class="material-icons">add</i>
+          Section
+        </button>
+      </div>
+
+      <div class="cmp-section-container"></div>
+    </main>
+  </body>
+</html>
